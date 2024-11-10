@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shikhar Patel's DSA Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Background styling */
+        body {
+            background: linear-gradient(to right, rgba(34, 193, 195, 0.8), rgba(253, 187, 45, 0.8)), url('https://www.transparenttextures.com/patterns/diagonal-noise.png');
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Fade-in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Header styling */
+        .header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Section card styling */
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            max-width: 700px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Section titles */
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+
+        /* Link and social icon styles */
+        .resume-link, .platform-link {
+            color: #4a90e2;
+            font-weight: 500;
+            text-decoration: underline;
+            margin: 1rem 0;
+            display: inline-block;
+        }
+        .resume-link:hover, .platform-link:hover {
+            color: #357ABD;
+            text-decoration: none;
+        }
+        .social-icon:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Header Section -->
+    <header class="header fade-in" id="header">
+        <h1 class="text-4xl font-bold">Shikhar Patel</h1>
+        <p class="text-lg mt-2">2nd Year CSE CORE Student at SRM Institute of Science and Technology</p>
+    </header>
+
+    <!-- Personal Details Section -->
+    <section class="card fade-in">
+        <h2 class="section-title">Personal Details</h2>
+        <p><strong>Email:</strong> sp373473@gmail.com</p>
+        <p><strong>Contact No:</strong> 8126640446</p>
+        <a href="https://drive.google.com/file/d/1QxvGYxdSzavOEs_Y8MSmiSfz3PMWMw5z/view?usp=drive_link" target="_blank" class="resume-link">Download Resume</a>
+        <div class="flex space-x-4 mt-4">
+            <a href="https://www.linkedin.com/in/shikhar-patel634" target="_blank" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-8 h-8">
+            </a>
+            <a href="https://github.com/Shikharpatel" target="_blank" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="w-8 h-8">
+            </a>
+        </div>
+    </section>
+
+    <!-- About DSA Section -->
+    <section class="card fade-in">
+        <h2 class="section-title">About DSA</h2>
+        <p>Currently, as a 2nd-year engineering student, I am diving into the fundamental concepts of Data Structures and Algorithms (DSA). This subject is essential in computer science as it provides a systematic approach to problem-solving and enables me to create efficient, optimized solutions. DSA forms the backbone of programming and plays a key role in developing high-performance applications.</p>
+
+        <h3 class="text-lg font-medium mt-4">Topics Covered</h3>
+        <ul class="list-disc ml-6 mb-4">
+            <li><strong>Basic Data Structures (Arrays, Linked Lists, Stacks, Queues):</strong> These are the building blocks of data organization. Arrays allow for fast, index-based access to data, while linked lists offer more flexibility by dynamically managing memory. Stacks and queues help manage data in a Last In First Out (LIFO) and First In First Out (FIFO) order, respectively. These data structures are useful in scenarios like undo operations, task scheduling, and parsing expressions.</li>
+
+            <li><strong>Searching Algorithms:</strong> Searching algorithms are crucial for finding elements in a collection of data. The basic ones include:
+                <ul class="list-inside list-disc ml-8">
+                    <li><strong>Linear Search:</strong> It checks each element one by one in an unsorted list until the desired element is found. Its time complexity is O(n).</li>
+                    <li><strong>Binary Search:</strong> It divides a sorted list in half and checks the middle element. If the element is smaller, the search continues in the left half; otherwise, it continues in the right half. The time complexity is O(log n), making it much faster than linear search for large datasets.</li>
+                </ul>
+            </li>
+
+            <li><strong>Sorting Algorithms:</strong> Sorting is the process of arranging data in a specific order. Some commonly used sorting algorithms include:
+                <ul class="list-inside list-disc ml-8">
+                    <li><strong>Bubble Sort:</strong> A simple sorting algorithm that repeatedly swaps adjacent elements if they are in the wrong order. Its time complexity is O(n^2).</li>
+                    <li><strong>Insertion Sort:</strong> Builds the sorted array one item at a time by inserting each new element in its correct position. It has a time complexity of O(n^2) in the worst case.</li>
+                    <li><strong>Merge Sort:</strong> A divide-and-conquer algorithm that splits the array into halves, sorts each half, and merges them back together. Its time complexity is O(n log n), which is more efficient than Bubble Sort and Insertion Sort.</li>
+                    <li><strong>Quick Sort:</strong> Another divide-and-conquer approach, but it selects a pivot element and sorts the remaining elements around it. Quick Sort has an average time complexity of O(n log n), but it can degrade to O(n^2) in the worst case.</li>
+                    <li><strong>Selection Sort:</strong> Repeatedly selects the smallest (or largest) element from the unsorted portion and swaps it with the leftmost unsorted element. Its time complexity is O(n^2).</li>
+                </ul>
+            </li>
+
+            <li><strong>Linked List:</strong> A linked list is a linear data structure where each element (node) points to the next node. It's a more flexible data structure compared to arrays as it allows dynamic memory allocation and efficient insertions and deletions at any point. Linked lists can be single, doubly, or circular. In a single linked list, each node has one pointer to the next node, whereas in a doubly linked list, each node points to both the next and previous nodes.</li>
+
+            <li><strong>Stacks and Queues:</strong> 
+                <ul class="list-inside list-disc ml-8">
+                    <li><strong>Stack:</strong> A stack follows the Last In First Out (LIFO) principle. Operations such as push (adding an element) and pop (removing an element) occur from the top of the stack. It's useful in scenarios like recursion, expression evaluation, and backtracking.</li>
+                    <li><strong>Queue:</strong> A queue follows the First In First Out (FIFO) principle. It is used in scheduling tasks, handling requests, and managing data streams, among other things.</li>
+                </ul>
+            </li>
+
+            <li><strong>Hashing:</strong> Hashing is a technique used to uniquely identify a specific object from a collection of similar objects. It uses a hash function to map data to a fixed-size value. Hash Tables and Hash Maps are widely used for fast data retrieval, where the key-value pair lookup can be done in constant time O(1). Common use cases include caching, indexing, and searching in large datasets.</li>
+
+            <li><strong>Graphs:</strong> Graphs are used to represent relationships between objects. They consist of vertices (nodes) and edges (connections between nodes). Graphs can be directed or undirected, weighted or unweighted. Graph traversal algorithms like Breadth-First Search (BFS) and Depth-First Search (DFS) are used to explore graphs efficiently.
+                <ul class="list-inside list-disc ml-8">
+                    <li><strong>BFS (Breadth-First Search):</strong> It explores all the vertices at the present depth level before moving on to vertices at the next depth level. It's ideal for finding the shortest path in an unweighted graph.</li>
+                    <li><strong>DFS (Depth-First Search):</strong> It explores as far as possible along each branch before backing up. DFS can be implemented using recursion or an explicit stack.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3 class="text-lg font-medium mt-4">Advantages of DSA</h3>
+        <p>Mastering DSA prepares me for challenges in various fields such as software development, AI, machine learning, and data science. With a strong grasp of data structures and algorithms, I am equipped to write efficient, optimized, and scalable code. DSA is key to solving complex problems and optimizing solutions, which is highly valued in technical interviews and real-world application development.</p>
+    </section>
+
+    <!-- Practice Platforms Section -->
+    <section class="card fade-in">
+        <h2 class="section-title">Practice Platforms</h2>
+        <p>To strengthen my DSA knowledge, I regularly practice coding problems on competitive programming platforms like LeetCode and CodeChef. These platforms provide a wide range of problems that help in honing my problem-solving skills.</p>
+        
+        <div class="mt-4">
+            <a href="https://leetcode.com/u/ShikharPatel_634/" target="_blank" class="platform-link">LeetCode Profile</a>
+            <p class="text-gray-700">LeetCode offers diverse problems that aid in mastering various DSA concepts, preparing me for technical interviews and enhancing my algorithmic skills.</p>
+        </div>
+        
+        <div class="mt-4">
+            <a href="https://www.codechef.com/users/slow_coyote_70" target="_blank" class="platform-link">CodeChef Profile</a>
+            <p class="text-gray-700">CodeChef helps me practice under competitive scenarios with regular contests, sharpening my speed and accuracy in solving complex DSA problems.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Shikhar Patel. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for fade-in animation
+        function handleScroll() {
+            const fadeInElements = document.querySelectorAll('.fade-in');
+            fadeInElements.forEach((el) => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', handleScroll);
+        window.addEventListener('scroll', handleScroll);
+    </script>
+
+</body>
+</html>
